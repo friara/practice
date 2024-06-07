@@ -5,12 +5,11 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 import ru.neoflex.practice.model.Calculations;
 import ru.neoflex.practice.service.CalculationsService;
+import ru.neoflex.practice.swaggerAnnotations.GetAllCalculations;
 
 @RestController
 public class CalculationsController {
 
-//    @Autowired
-//    private CalculatiomsRepository calculatiomsRepository;
     @Autowired
     private final CalculationsService service;
 
@@ -18,6 +17,7 @@ public class CalculationsController {
         this.service = service;
     }
 
+    @GetAllCalculations
     @GetMapping("/calculations")
     public String calculations() {
         StringBuilder calculations = new StringBuilder();

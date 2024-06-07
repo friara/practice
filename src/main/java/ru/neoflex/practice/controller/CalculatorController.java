@@ -6,11 +6,12 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 import ru.neoflex.practice.model.Calculations;
 import ru.neoflex.practice.service.CalculationsService;
+import ru.neoflex.practice.swaggerAnnotations.MinusMetod;
+import ru.neoflex.practice.swaggerAnnotations.PlusMetod;
 
 @RestController
 public class CalculatorController {
-//    @Autowired
-//    private CalculatiomsRepository calculatiomsRepository;
+
     @Autowired
     private final CalculationsService service;
 
@@ -18,6 +19,7 @@ public class CalculatorController {
         this.service = service;
     }
 
+    @PlusMetod
     @GetMapping("/plus/{a}/{b}")
     public String plus(@PathVariable("a") Integer a, @PathVariable("b") Integer b) {
         String result = String.valueOf(a+b);
@@ -26,6 +28,7 @@ public class CalculatorController {
         service.insert(calculation);
         return result;
     }
+    @MinusMetod
     @GetMapping("/minus/{a}/{b}")
     public String minus(@PathVariable("a") Integer a, @PathVariable("b") Integer b) {
         String result = String.valueOf(a-b);
