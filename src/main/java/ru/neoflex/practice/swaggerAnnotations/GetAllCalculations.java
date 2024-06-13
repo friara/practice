@@ -14,13 +14,13 @@ import java.lang.annotation.Target;
 @Retention(RetentionPolicy.RUNTIME)
 @Operation(
         summary = "get all expressions",
-        description = "returns an array of expressions"
+        description = "returns list of expressions"
 )
 @ApiResponse(
         responseCode = "200",
-        description = "list of expressions, will contain no elements if there were no requests",
+        description = "list of expressions, will not contain items if there were no requests",
         content = {
-                @Content(mediaType = "application/string", schema =
+                @Content(mediaType = "application/String", schema =
                 @Schema(description = "expression list", example = "{\"expressions\": [ { \"expression\": \"2 + 2\", \"result\": 4 } ] }"))
         }
 )

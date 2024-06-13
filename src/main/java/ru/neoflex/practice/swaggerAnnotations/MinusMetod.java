@@ -20,7 +20,7 @@ import java.lang.annotation.Target;
         responseCode = "200",
         description = "returns a result",
         content = {
-                @Content(mediaType = "application/string", schema =
+                @Content(mediaType = "application/String", schema =
                 @Schema(description = "expression", example = "{ \"expression\": \"8 - 3\", \"result\": 5 } "))
         }
 )
