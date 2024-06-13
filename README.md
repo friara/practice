@@ -1,9 +1,11 @@
 Web Calculator project for practice at Neoflex.
 
 Screenshots from Swagger UI:
-![image](https://github.com/friara/practice/assets/120332841/6ec60649-765b-4290-8782-e53a5551c1b7)
-![image](https://github.com/friara/practice/assets/120332841/ea455d09-1a37-4faf-bfd9-4eeaacb04eb6)
-![image](https://github.com/friara/practice/assets/120332841/413c8369-9c94-42de-8dc3-8c59999c7291)
+![image](https://github.com/friara/practice/assets/120332841/caafd811-c080-4ead-91ab-b81e15cf421a)
+![image](https://github.com/friara/practice/assets/120332841/d7a1bcb1-2d81-49a5-9ff4-c5f7033a08cc)
+![image](https://github.com/friara/practice/assets/120332841/ae0aa549-dd6c-4ca0-acdc-aa5e765cd985)
+![image](https://github.com/friara/practice/assets/120332841/be410be0-ad1a-48f6-947b-945ca10a88c8)
+
 
 
 
